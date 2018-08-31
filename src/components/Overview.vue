@@ -63,7 +63,7 @@ import Vue from 'vue'
                                   blockNum: blockList[i].block_num,
                                   timestamp: humanDate,
                                   producer: blockList[i].producer,
-                                  transactions: blockList[i].input_transactions.length,
+                                  transactions: blockList[i].transactions.length,
                                   blockPath: blockPath,
                                   accountPath: accountPath
                                 })
@@ -75,7 +75,7 @@ import Vue from 'vue'
             });
       },
       fetchData: function(){
-        this.interval = setInterval(()=>{this.getLatestBlocks(10);}, 1000)
+        this.interval = setInterval(()=>{this.getLatestBlocks(1);}, 100000)
       },
       convertUTCtoHuman(date){
           const monthNames = [

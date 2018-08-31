@@ -145,7 +145,7 @@ import Vue from 'vue'
                 this.items[4].data = result.previous
                 this.items[4].link = '/blocks/' + result.previous
                 this.items[5].data = result.transaction_mroot
-                this.items[6].data = result.input_transactions.length
+                this.items[6].data = result.transactions.length
                 console.log("esto es: " + result.transactions)
                 //let transactions = result.transactions
                 console.log("it works! " + resultStr)
@@ -164,7 +164,7 @@ import Vue from 'vue'
                 this.items[4].data = result.previous
                 this.items[4].link = '/blocks/' + result.previous
                 this.items[5].data = result.transaction_mroot
-                this.items[6].data = result.input_transactions.length
+                this.items[6].data = result.transactions.length
                 console.log("it works! " + resultStr)
                 this.rawData = json.plain(result)
                 })

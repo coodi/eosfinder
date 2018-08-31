@@ -1,4 +1,4 @@
-const mongourl = 'mongodb://jordi:jordi!@localhost:27017/EOS'
+const mongourl = 'mongodb://localhost:27017/EOS'
 
 //var MongoClient = require('mongodb').MongoClient;
 //import mongoc from 'mongodb'
